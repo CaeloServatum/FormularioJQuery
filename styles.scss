@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$gray: rgb(0, 0, 0, 0.5);
+
+body {
+    background-color: #CEA9D5;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    form#formulario {
+        width: 900px;
+        height: auto;
+        background-color: #F9D6FF;
+        text-align: center;
+        padding: 5px;
+        margin-top: 15px;
+        border-radius: 10px;
+        h2 {
+            margin: -5px -5px 5px;
+            padding: 5px;
+            background-color: #A06BAA;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+         span{
+            font-size: 10px;
+            color: red;
+            width: 100%;
+            display: block;
+            margin: 2px 0;
+
+        }
+        input{
+            width: 85%;
+            margin: 5px 0;
+            border: 2px solid $gray;
+            padding: 10px;
+        }
+        button{
+            width: 55%;
+            height: auto;
+            font-size: 15px;
+            color: white;
+            background-color: #A06BAA;
+            border: 2px solid $gray;
+            margin: 5px;
+            padding: 5px;
+            transition: background-color 0.3s ease, color 0.2s ease;
+                &:hover {
+                    background-color: #CEA9D5;
+                    color: rgb(0, 0, 0, 0.5);
+                }
+            }
+        div[class^="box-"]{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+                label:nth-child(1){
+                    width: 100%;
+                    margin: 3px;
+                }
+                &.box-condiciones{
+                    input{
+                        width: auto;
+                    }
+                    label{
+                        width: 50%;
+                    input{
+                     margin: 10px 5px;
+                    }
+                    &:nth-of-type(1){
+                        width: 100%;
+                    }   
+                    }
+                }
+            }
+    }
+}
+
+.input-error {
+  border: 2px solid red !important;
+  background-color: #ffecec;
+}
+
+
+

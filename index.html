@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>Formulario</title>
+<link rel='stylesheet' href='styles.css' />
+<link href='https://fonts.googleapis.com/css2?family=Geologica:wght@100;400;600;900&display=swap' rel='stylesheet'>
+<script src='https://kit.fontawesome.com/014126d435.js' crossorigin='anonymous'></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Formulario OwO</h1>
+    <form id="formulario" onsubmit="return validarFormulario()">
+
+        <h2>Registrito</h2>
+        <div class="box-nombre">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="nombre" placeholder="Nombre">
+            <span class="error" id="error-nombre"></span>
+        </div>  
+
+        <div class="box-apellido">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" class="apellido" placeholder="Apellido">
+            <span class="error" id="error-apellido"></span>
+        </div>
+
+        <div class="box-cedula">
+            <label for="cedula">Cedula</label>
+            <input type="text" id="cedula" class="cedula" placeholder="Cedula">
+            <span class="error" id="error-cedula"></span>
+        </div>
+
+        <div class="box-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email" placeholder="Email">
+            <span class="error" id="error-email"></span>
+        </div>
+
+        <div class="box-condiciones">
+        <label> Terminos y condiciones </label>
+        <label> 
+            <input type="radio" name="tyc" value="M">Acepto
+        </label>
+        <label>
+            <input type="radio" name="tyc" value="F">No Acepto
+        </label>
+        <span class="error" id="error-tyc"></span>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+<script src='index.js'></script>
+</body>
+</html>
